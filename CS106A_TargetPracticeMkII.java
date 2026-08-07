@@ -13,6 +13,15 @@ import java.awt.*;
 
 public class CS106A_TargetPracticeMkII extends GraphicsProgram
 {	
+	/** Omission of below invokes java's auto-empty default constructor */
+	/** Omission of super() inside of below invokes java's auto-invisible super() call */
+	/**
+	public CS106A_TargetPracticeMkII()
+	{
+		super();
+	}
+	*/
+	
 	public void run()
 	{ 
 		createTarget();
