@@ -1,9 +1,9 @@
 /**
  * File: CS106A_TargetPracticeMkII.java
  * ----------------------------
- * This Java program draws a target to the canvas using more
- * streamlined center variables (cx,cy) and methods 
- * (createFilledCircle) than its predecessor.
+ * The CS106A_TargetPrcticeMkII class draws a target to the 
+ * canvas using more streamlined center variables (cx,cy) and 
+ * methods (createFilledCircle) than its predecessor.
  * 
  */
 
@@ -13,6 +13,11 @@ import java.awt.*;
 
 public class CS106A_TargetPracticeMkII extends GraphicsProgram
 {	
+	/** Private instance varibles */
+	private static final int N_CIRCLES = 5;
+	private static final double OUTER_RADIUS = 75;
+	private static final double INNER_RADIUS = 10;
+	
 	/** Omission of below invokes java's auto-empty default constructor */
 	/** Omission of super() inside of below invokes java's auto-invisible super() call */
 	/**
@@ -28,6 +33,9 @@ public class CS106A_TargetPracticeMkII extends GraphicsProgram
 	}
 	
 	
+	/** 
+	 * Draws a target to the center of the canvas 
+	 * */
 	private void createTarget()
 	{	
 		//center x & y
@@ -47,6 +55,11 @@ public class CS106A_TargetPracticeMkII extends GraphicsProgram
 	}
 	
 	
+	/**
+	 * Returns a GOval object of specified dimensions and color to the return address.
+	 * @param x The X-origin of the upper left corner of the oval's bounding box
+	 * @param y The Y-origin of the upper left corner of the oval's bounding box
+	 * */
 	private GOval createFilledCircle(
 			double x, double y,
 			double r, Color color)
@@ -56,8 +69,4 @@ public class CS106A_TargetPracticeMkII extends GraphicsProgram
 		circle.setFilled(true);
 		return circle;
 	}
-	
-	private static final int N_CIRCLES = 5;
-	private static final double OUTER_RADIUS = 75;
-	private static final double INNER_RADIUS = 10;
 }
